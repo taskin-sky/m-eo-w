@@ -126,7 +126,7 @@ p {
   grid-area: header;
 }
 .child1:hover {
-  background-image: url(/img/catBanner.png);
+  background-image: url(./img/catBanner.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -142,7 +142,7 @@ p {
   grid-area: header;
 }
 .child2:hover {
-  background-image: url(/img/catSidebar.png);
+  background-image: url(./img/catSidebar.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -181,7 +181,6 @@ p {
 }
 
 .child4 {
-  /* grid-area: child4; */
   grid-area: footer;
 }
 .child4:hover {
@@ -195,7 +194,6 @@ p {
 }
 
 .child5 {
-  /* grid-area: child5; */
   grid-area: contact;
 }
 .child5:hover {
@@ -209,7 +207,6 @@ p {
 }
 
 .child6 {
-  /* grid-area: child6; */
   grid-area: logo;
 
   background-image: url('https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif');
@@ -220,7 +217,6 @@ p {
 }
 
 .child6:hover {
-  /* grid-area: child6; */
   grid-area: logo;
   border-radius: 200px;
   animation: animation1 0.8s ease-out;
