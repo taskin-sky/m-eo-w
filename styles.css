@@ -46,7 +46,6 @@ p {
     text-shadow: 0 0 10px orange, 0 0 20px orange;
   }
   75% {
-    transform: scale(1);
     color: rgb(204, 136, 102);
     text-shadow: 0 0 5px orange;
   }
@@ -68,16 +67,32 @@ p {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('./img/backdroundCats.jpg');
+  /* background-image: url('./img/backdroundCats.jpg'); */
   background-size: cover;
   background-position: center;
   opacity: 0.1;
   z-index: 0;
+  animation: Animationparent infinite 10s linear;
 }
 
 #parent > * {
   position: relative;
   z-index: 1;
+}
+
+@keyframes Animationparent {
+  from {
+    background-image: url('./img/backdroundCats.jpg');
+  }
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-image: url('./img/backdroundCats.jpg');
+  }
+  100% {
+    background-image: url('./img/backdroundCats.jpg');
+  }
 }
 
 .child {
@@ -105,7 +120,6 @@ p {
     'footer footer contact logo';
 
   gap: 8px;
-
   height: 90vh;
 }
 
@@ -120,7 +134,7 @@ p {
 .child1 {
   grid-area: header;
 }
-.child1:hover {
+/* .child1:hover {
   background-image: url('./img/catBanner.png');
   background-size: cover;
   background-position: center;
@@ -128,14 +142,44 @@ p {
   transition: 0.3s ease-in-out;
   border-radius: 50px;
   filter: brightness(50%);
+} */
+.child1:hover {
+  background-image: url('./img/catBanner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  border-radius: 50px;
+  animation: animation1 0.8s ease-out;
+}
+
+@keyframes animation1 {
+  from {
+    background-image: url('./img/catBanner.png');
+  }
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-image: url('./img/catBanner.png');
+  }
+  100% {
+    background-image: url('./img/catBanner.png');
+  }
 }
 
 .child2 {
   grid-area: sidebar;
 }
-.child1 {
-  grid-area: header;
-}
+/* .child2:hover {
+  background-image: url('./img/catSidebar.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  border-radius: 50px;
+} */
+/* Child 2 */
 .child2:hover {
   background-image: url('./img/catSidebar.png');
   background-size: cover;
@@ -143,6 +187,22 @@ p {
   background-repeat: no-repeat;
   transition: 0.3s ease-in-out;
   border-radius: 50px;
+  animation: animation2 0.8s ease-out;
+}
+
+@keyframes animation2 {
+  from {
+    background-image: url('./img/catSidebar.png');
+  }
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-image: url('./img/catSidebar.png');
+  }
+  100% {
+    background-image: url('./img/catSidebar.png');
+  }
 }
 
 .child3 {
@@ -159,7 +219,7 @@ p {
   animation: animation3 0.8s ease-out;
 }
 
-/* @keyframes animation3 {
+@keyframes animation3 {
   from {
     background-image: url('./img/catBody.jpg');
   }
@@ -173,12 +233,12 @@ p {
   100% {
     background-image: url('./img/catBody.jpg');
   }
-} */
+}
 
 .child4 {
   grid-area: footer;
 }
-.child4:hover {
+/* .child4:hover {
   background-image: url('./img/catBanner.png');
   background-size: cover;
   background-position: bottom;
@@ -186,12 +246,37 @@ p {
   transition: 0.3s ease-in-out;
   border-radius: 50px;
   filter: brightness(50%);
+} */
+/* Child 4 */
+.child4:hover {
+  background-image: url('./img/catBanner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  border-radius: 50px;
+  animation: animation4 0.8s ease-out;
+}
+
+@keyframes animation4 {
+  from {
+    background-image: url('./img/catBanner.png');
+  }
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-image: url('./img/catBanner.png');
+  }
+  100% {
+    background-image: url('./img/catBanner.png');
+  }
 }
 
 .child5 {
   grid-area: contact;
 }
-.child5:hover {
+/* .child5:hover {
   background-image: url('./img/cute-cartoon-black-cat.webp');
   background-size: cover;
   background-position: center;
@@ -199,6 +284,31 @@ p {
   transition: 0.3s ease-in-out;
   border-radius: 50px;
   filter: brightness(150%);
+} */
+/* Child 5 */
+.child5:hover {
+  background-image: url('./img/cute-cartoon-black-cat.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  border-radius: 50px;
+  animation: animation5 0.8s ease-out;
+}
+
+@keyframes animation5 {
+  from {
+    background-image: url('./img/cute-cartoon-black-cat.webp');
+  }
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-image: url('./img/cute-cartoon-black-cat.webp');
+  }
+  100% {
+    background-image: url('./img/cute-cartoon-black-cat.webp');
+  }
 }
 
 .child6 {
@@ -214,10 +324,10 @@ p {
 .child6:hover {
   grid-area: logo;
   border-radius: 200px;
-  animation: animation1 0.8s ease-out;
+  animation: animation6 0.8s ease-out;
 }
 
-@keyframes animation1 {
+@keyframes animation6 {
   from {
     background-image: url('./img/cute-cartoon-gray-cat.jpg');
   }
