@@ -14,11 +14,11 @@ This project demonstrates modern design approaches and best practices in web dev
 
 ## 📸 Preview
 
-![Animated Cat Layout](images/meowGif.gif)
+![Animated Cat Layout](img/meowGif.gif)
 
-![Cat Layout Example 1](images/meowLayout1.png)
+![Cat Layout Example 1](img/meowLayout1.png)
 
-![Cat Layout Example 2](images/meowLayout2.png)
+![Cat Layout Example 2](img/meowLayout2.png)
 
 ## 🛠️ Technologies Used
 
