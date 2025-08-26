@@ -152,14 +152,32 @@ p {
 
 .child3 {
   grid-area: body;
+  /* background-image: url(./img/catBody.jpg); */
 }
 .child3:hover {
-  background-image: url(/img/catBody.jpg);
+  background-image: url(./img/catBody.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.3s ease-in-out;
   border-radius: 50px;
+  animation: animation3 0.8s ease-out;
+}
+
+@keyframes animation3 {
+  from {
+    background-image: url('./img/catBody.jpg');
+  }
+
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-image: url('./img/catBody.jpg');
+  }
+  100% {
+    background-image: url('./img/catBody.jpg');
+  }
 }
 
 .child4 {
