@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="icon" href="img/catLogo.jpg" type="image/x-icon" />
+    <title>m-eo-w🐈</title>
+  </head>
+
+  <body>
+    <div class="container-fluid px-lg-5 pb-5 bg-dark text-white text-center">
+      <!-- <h2>m-eo-w</h2>
+        <p>The Cat Sound App</p> -->
+    <h1 id="main-title">
+      <span id="show-cats">m-eo-w🐈.</span>
+      <p>click me</p>
+    </h1>
+
+    <div id="parent">
+      <div class="child child1"></div>
+      <div class="child child2"></div>
+      <div class="child child3"></div>
+      <div class="child child4"></div>
+      <div class="child child5"></div>
+      <div class="child child6">
+        <audio id="mew-audio" src="./sound/mew.mp3"></audio>
+      </div>
+    </div>
+    
+
+    <script>
+      const showCats = document.getElementById('show-cats');
+      const parentDiv = document.getElementById('parent');
+      const mainTitle = document.getElementById('main-title');
+
+      showCats.addEventListener('click', () => {
+        parentDiv.classList.add('show-all');
+        mainTitle.innerHTML =
+          'I am a <span id="show-cats">Cat🐈.</span> Please Hover Me';
+      });
+
+      const headerDiv = document.querySelector('.child6');
+      const mewAudio = document.getElementById('mew-audio');
+
+      headerDiv.addEventListener('mouseenter', () => {
+        mewAudio.currentTime = 0;
+        mewAudio.play();
+        setTimeout(() => {
+          mewAudio.pause();
+          mewAudio.currentTime = 0;
+        }, 1500);
+      });
+    </script>
+  </body>
+</html>
