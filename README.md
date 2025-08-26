@@ -1,10 +1,7 @@
-# Mew
+# 🐾 CSS Grid Cat Practice
 
-Welcome to the **Mew** project! This repository is part of the Ostad MERN Course, Module 3, focusing on engaging design techniques.
-
-## Overview
-
-This project demonstrates modern design approaches and best practices in web development using the MERN stack.
+This project is a fun and creative way to practice **CSS Grid** by building a playful cat-themed layout.  
+It’s a simple exercise to understand how grid properties work while making something visually engaging.
 
 ## Features
 
