@@ -30,22 +30,18 @@ p {
   text-transform: uppercase;
   text-shadow: 0 0 5px orange;
   cursor: pointer;
-  user-select: none;
   animation: p 2s infinite;
 }
 @keyframes p {
   0% {
-    transform: scale(0.5);
     color: lightgray;
     text-shadow: 0 0 5px orange;
   }
   25% {
-    transform: scale(1);
     color: rgb(204, 136, 102);
     text-shadow: 0 0 5px orange;
   }
   50% {
-    transform: scale(1.5);
     color: hsl(39, 100%, 50%);
     text-shadow: 0 0 10px orange, 0 0 20px orange;
   }
@@ -55,7 +51,6 @@ p {
     text-shadow: 0 0 5px orange;
   }
   100% {
-    transform: scale(0.5);
     color: lightgray;
     text-shadow: 0 0 5px orange;
   }
@@ -73,7 +68,7 @@ p {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/img/backdroundCats.jpg');
+  background-image: url('./img/backdroundCats.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.1;
@@ -126,7 +121,7 @@ p {
   grid-area: header;
 }
 .child1:hover {
-  background-image: url(./img/catBanner.png);
+  background-image: url('./img/catBanner.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -142,7 +137,7 @@ p {
   grid-area: header;
 }
 .child2:hover {
-  background-image: url(./img/catSidebar.png);
+  background-image: url('./img/catSidebar.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,7 +150,7 @@ p {
   /* background-image: url(./img/catBody.jpg); */
 }
 .child3:hover {
-  background-image: url(./img/catBody.jpg);
+  background-image: url('./img/catBody.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -164,7 +159,7 @@ p {
   animation: animation3 0.8s ease-out;
 }
 
-@keyframes animation3 {
+/* @keyframes animation3 {
   from {
     background-image: url('./img/catBody.jpg');
   }
@@ -178,13 +173,13 @@ p {
   100% {
     background-image: url('./img/catBody.jpg');
   }
-}
+} */
 
 .child4 {
   grid-area: footer;
 }
 .child4:hover {
-  background-image: url(/img/catBanner.png);
+  background-image: url('./img/catBanner.png');
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -197,7 +192,7 @@ p {
   grid-area: contact;
 }
 .child5:hover {
-  background-image: url(/img/cute-cartoon-black-cat.webp);
+  background-image: url('./img/cute-cartoon-black-cat.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
